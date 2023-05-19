@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/persegiPanjangFragment">
+
+    <fragment
+        android:id="@+id/persegiPanjangFragment"
+        android:name="org.d3if2029.assasement.ui.persegi_panjang.PersegiPanjangFragment"
+        android:label="Hitung Persegi Panjang"
+        tools:layout="@layout/fragment_persegipanjang" >
+        <action
+            android:id="@+id/action_persegiPanjangFragment_to_rumusPersegiPanjangFragment"
+            app:destination="@id/rumusPersegiPanjangFragment" />
+        <action
+            android:id="@+id/action_persegiPanjangFragment_to_aboutPersegiPanjangFragment"
+            app:destination="@id/aboutPersegiPanjangFragment" />
+        <action
+            android:id="@+id/action_persegiPanjangFragment_to_historiFragmentPersegiPanjang"
+            app:destination="@id/historiPersegiPanjangFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rumusPersegiPanjangFragment"
+        android:name="org.d3if2029.assasement.ui.RumusPersegiPanjangFragment"
+        android:label="Rumus Persegi Panjang"
+        tools:layout="@layout/fragment_rumus_persegipanjang"/>
+    <fragment
+        android:id="@+id/aboutPersegiPanjangFragment"
+        android:name="org.d3if2029.assasement.ui.AboutPersegiPanjangFragment"
+        android:label="Tentang Persegi Panjang"
+        tools:layout="@layout/fragment_about_persegipanjang"/>
+    <fragment
+        android:id="@+id/historiPersegiPanjangFragment"
+        android:name="org.d3if2029.assasement.ui.histori.HistoriPersegiPanjangFragment"
+        android:label="Histori Hitung Persegi Panjang"
+        tools:layout="@layout/fragment_histori_persegipanjang" />
+
+
+</navigation>
